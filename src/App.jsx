@@ -92,11 +92,11 @@ function App() {
   const hasUsers = users.length > 0
 
   return (
-    <div id='body' className='font-["Lato"] min-h-screen bg-bkg_white text-black flex flex-col items-center justify-between'>
+    <div id='body' className='font-["Lato"] min-h-screen bg-bkg_white text-black flex flex-col items-center justify-between bg-gradient-to-r from-white to-blue-500 w-full'>
       <Header changeShowModal={changeShowModal}/>
       <ModalForm isShowModal={isShowModal} changeShowModal={changeShowModal} createUser={createUser} isUserToUpdate={isUserToUpdate} updateUser={updateUser} resetModalForm={resetModalForm}/>
       
-      <main className=' p-5 bg-gradient-to-r from-white to-blue-500 w-full '>
+      <main className=' p-5  '>
       <h2 className='text-center text-3xl font-bold py-5'>Lista de Usuarios</h2>
 
       {

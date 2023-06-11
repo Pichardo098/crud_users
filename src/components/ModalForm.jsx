@@ -77,9 +77,9 @@ const ModalForm = ({isShowModal,createUser,isUserToUpdate,updateUser,resetModalF
             Contraseña <span className="text-btn_delete font-bold">*</span>
           </label>
           <input  placeholder="Ingresa tu contraseña..." className="rounded-lg bg-gray-100 outline-none p-2 " {...register("password" ,{required:true})}  type={watchPassword ? "text":"password"} />
-          <button onClick={handleTogglePassword} className="absolute right-0 top-[28px] bg-white rounded-lg py-[8px] px-[5px] hover:bg-black/30">
+          <div onClick={handleTogglePassword} className="absolute right-0 top-[28px] bg-white rounded-lg py-[8px] px-[5px] hover:bg-black/30">
             <i className='bx bxs-low-vision'></i>
-          </button>
+          </div>
         </div>
 
         {/* Cumpleaños */}
