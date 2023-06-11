@@ -87,14 +87,14 @@ const ModalForm = ({isShowModal,createUser,isUserToUpdate,updateUser,resetModalF
           <label className="font-bold text-sm text-black">
             Cumpleaños
           </label>
-          <input  placeholder="DD/MM/AAAA" className="rounded-lg bg-gray-100 outline-none p-2" {...register("birthday" ,{required:true})} type="date" />
+          <input  placeholder="DD/MM/AAAA" className="rounded-lg bg-gray-100 outline-none p-2" {...register("birthday")} type="date" />
         </div>
         {/* Image */}
         <div className="grid gap-2">
           <label className="font-bold text-sm text-black">
             Imagen de Perfil
           </label>
-          <input  placeholder="Ingresa la URL de tu imagen..." className=" rounded-lg bg-gray-100 outline-none p-2" {...register("image_url" ,{required:true})} type="text"  />
+          <input  placeholder="Ingresa la URL de tu imagen..." className=" rounded-lg bg-gray-100 outline-none p-2" {...register("image_url")} type="text"  />
         </div>
 
         <button onClick={handleClickCloseModal}  type="button" className="absolute right-0 py-5 px-2  text-3xl font-bold hover:text-btn_delete"><i className='bx bx-x'></i></button>
