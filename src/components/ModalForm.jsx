@@ -43,7 +43,7 @@ const ModalForm = ({isShowModal,createUser,isUserToUpdate,updateUser,resetModalF
 
   return (
     <section className={`  transition-opacity duration-1000 fixed top-0 right-0 left-0 h-screen bg-black/40 grid place-content-center z-10 gap-3 ${isShowModal ? "visible opacity-100": "invisible opacity-0"}  `}>
-      <form onSubmit={handleSubmit(submit)} className="bg-gradient-to-b from-cyan-500 to-bkg_white text-black w-[300px] p-4 grid gap-6 rounded-xl relative  max-[400px]:overflow-scroll lg:w-[500px]">
+      <form onSubmit={handleSubmit(submit)} className="bg-gradient-to-b from-cyan-500 to-bkg_white text-black w-[300px] p-4 grid gap-6 rounded-xl relative  max-[600px]:overflow-scroll lg:w-[500px]">
         <h3 className="font-bold text-3xl lg:text-center">{isUserToUpdate ? "Editar usuario":"Nuevo Usuario"}</h3>
 
         <p className="text-btn_delete font-bold" >Campos requeridos *</p>
